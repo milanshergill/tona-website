@@ -1,0 +1,39 @@
+<section>
+<form>
+<input type="submit" ng-click="user.showUsers()" value="Show All Users">
+</form>
+<div ng-repeat="x in users">
+  <p>
+    {{x.name}}
+  </p>
+</div>
+<div>
+  <div style="height: 305px">
+    <uib-carousel active="user.active" interval="user.myInterval" no-wrap="user.noWrapSlides">
+      <uib-slide ng-repeat="slide in user.slides track by slide.id" index="slide.id">
+        <img ng-src="{{slide.image}}" style="margin:auto;">
+        <div class="carousel-caption">
+          <h4>Slide {{slide.id}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </uib-slide>
+    </uib-carousel>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <button type="button" class="btn btn-info" ng-click="user.addSlide()">Add Slide</button>
+      <button type="button" class="btn btn-info" ng-click="user.randomize()">Randomize slides</button>
+      <div class="checkbox">
+        <label>
+          <input type="checkbox" ng-model="user.noWrapSlides">
+          Disable Slide Looping
+        </label>
+      </div>
+    </div>
+    <div class="col-md-6">
+      Interval, in milliseconds: <input type="number" class="form-control" ng-model="user.myInterval">
+      <br />Enter a negative number or 0 to stop the interval.
+    </div>
+  </div>
+</div>
+</section>

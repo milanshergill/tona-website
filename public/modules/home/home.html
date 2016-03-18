@@ -1,0 +1,57 @@
+<section>
+<form>
+First Name: <input ng-model="firstName" type="text" name="first_name">  <br>
+
+Last Name: <input ng-model="lastName" type="text" name="last_name">
+<input type="submit" ng-click="home.createUser()" value="Submit">
+</form>
+<form class="form-horizontal">
+  <div class="form-group">
+    <label for="inputFirstName" class="col-sm-2 control-label">First Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputLastName" class="col-sm-2 control-label">Last Name</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputHouse" class="col-sm-2 control-label">Select House:</label>
+    <div class="col-sm-10">
+      <select class="form-control" id="inputHouse">
+        <option>Beas</option>
+        <option>Jumna</option>
+        <option>Ravi</option>
+        <option>Satluj</option>
+      </select>
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="inputHouseNumber" class="col-sm-2 control-label">House Number</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="inputHouseNumber" placeholder="House Number">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputTel" class="col-sm-2 control-label">Phone Number</label>
+    <div class="col-sm-10">
+      <input type="tel" class="form-control" id="inputTel" placeholder="(123) 456-7890">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-default">Become a Member</button>
+    </div>
+  </div>
+</form>
+</section>

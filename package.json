@@ -1,0 +1,12 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "*",
+    "bower": "^1.7.7",
+    "express": "*",
+    "gulp": "^3.9.1",
+    "mongoose": "*",
+    "path": "*"
+  }
+}
